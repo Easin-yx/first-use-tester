@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { readFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
-const template = readFileSync(new URL('../templates/first-visit.md', import.meta.url), 'utf8');
+const template = readFileSync(new URL('../skills/first-use-tester/assets/first-visit.md', import.meta.url), 'utf8');
 export function brief(address, goal) {
   const url = new URL(address);
   if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password)
